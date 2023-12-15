@@ -101,6 +101,8 @@ cout << total_dists << endl;
 ```
 We are good for part one!
 
+### Part Two
+
 Part two modifies the problem, specifically the expansion factor. Instead of doubling, the amound of space increases by a factor of million. Everything else remains the same. 
 
 Let's try updating how much we increase our offsets from 1 to 999,999.
