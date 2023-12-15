@@ -4,4 +4,4 @@ a.out
 test.py
 text.txt
 
-setup.sh
+*.sh

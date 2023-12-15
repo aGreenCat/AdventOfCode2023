@@ -8,7 +8,7 @@ using namespace std;
 const int GRID_WIDTH = 140;
 const int GRID_HEIGHT = 140;
 
-const int EXPANSION = 1;
+const int EXPANSION = 999999;
 
 struct Coord {
     int r;
