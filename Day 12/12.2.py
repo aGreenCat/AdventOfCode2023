@@ -2,15 +2,15 @@ f = open("input.txt").read().splitlines()
 
 cache = {}
 
-global funcCalls
-funcCalls = 0
+# global funcCalls
+# funcCalls = 0
 
-global cacheHits
-cacheHits = 0
+# global cacheHits
+# cacheHits = 0
 
 def arrange(counts, size, record):
-    global funcCalls
-    funcCalls += 1
+    # global funcCalls
+    # funcCalls += 1
 
     if size <= 0:
         return 0
@@ -53,8 +53,8 @@ def arrange(counts, size, record):
                 if possible_arrangement:
                     if record[i+count+1:] in cache and tuple(counts[1:]) in cache[record[i+count+1:]]:
                         possible_places = cache[record[i+count+1:]][tuple(counts[1:])]
-                        global cacheHits
-                        cacheHits += 1
+                        # global cacheHits
+                        # cacheHits += 1
                     else:
                         possible_places = arrange(counts[1:], size-i-count-1, record[i+count+1:])
                 
